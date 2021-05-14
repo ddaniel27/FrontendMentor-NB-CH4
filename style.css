@@ -101,7 +101,7 @@ hr{
 
 @media screen and (min-width:800px) {
    body{
-    background: url(images/bg-pattern-bottom.svg) right -150px bottom -600px no-repeat, url(images/bg-pattern-top.svg) left -150px top -600px no-repeat;
+    background: url(images/bg-pattern-bottom.svg) right -150px bottom -600px no-repeat, url(images/bg-pattern-top.svg) left -150px top -30vw no-repeat;
     background-size: 60vw 60vw;
     background-color: var(--dark-cyan);
    } 

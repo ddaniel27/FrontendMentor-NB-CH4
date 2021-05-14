@@ -1,0 +1,108 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: url(images/bg-pattern-bottom.svg) right -250px bottom -250px no-repeat, url(images/bg-pattern-top.svg) left -250px top -250px no-repeat;
+    background-size: 65vh 65vh;
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+}
+.container{
+    align-items: center;
+    display: flex;
+    height: 95%;
+    justify-content: center;
+}
+.card{
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem var(--dark-grayish-blue);
+    height: 406px;
+    width: 336px;
+}
+.header{
+    background-image: url(images/bg-pattern-card.svg);
+    border-radius: 1rem 1rem 0 0;
+    display: grid;
+    height: 40%;
+    justify-content: center;
+}
+.header img{
+    align-self: end;
+    border: 5px solid white;
+    border-radius: 100%;
+    position: relative;
+    top:7vh;
+}
+.info{
+    align-items: end;
+    display:grid;
+    grid-template-rows: repeat(4,1fr);
+    height: 40%;
+    justify-content: center;
+    text-align: center;
+}
+.info *{
+    padding: 0.3rem;
+}
+.name{
+    grid-row: 3;
+    font-weight: 700;
+}
+.age{
+    color: var(--dark-grayish-blue);
+    grid-row: 3;
+}
+.location{
+    align-self: start;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    grid-row: 4;
+}
+hr{
+    color: var(--dark-gray);
+}
+.stats{
+    align-items: center;
+    height: 20%;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+.stat-field *{
+    padding: 2px 0;
+}
+.number{
+    font-weight: 700;
+}
+.subtitle{
+    color: var(--dark-grayish-blue);
+    font-size: 12px;
+}
+.attribution{
+    color: var(--very-dark-blue);
+    font-size: 14px;
+    text-align: center;
+}
+.attribution a{
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+}
+
+@media screen and (min-width:800px) {
+   body{
+    background: url(images/bg-pattern-bottom.svg) right -150px bottom -600px no-repeat, url(images/bg-pattern-top.svg) left -150px top -600px no-repeat;
+    background-size: 60vw 60vw;
+    background-color: var(--dark-cyan);
+   } 
+}
